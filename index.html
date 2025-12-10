@@ -47,19 +47,33 @@
     <main>
       <section class="hero-slider" aria-label="Slider principal">
         <div class="container hero-inner">
-          <div class="slider" aria-roledescription="carousel" aria-label="Apresentação de slides">
-            <div class="slide" data-slide="1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</div>
-            <div class="slide" data-slide="2">SLIDE 2</div>
+          <div class="slider" aria-roledescription="carousel" aria-label="Apresentação do Café Vitta">
+            <div class="slide" data-slide="1">
+              <figure>
+                <img src="images/img-slider-cafe-vitta-hero.jpg" alt="Café Vitta: grãos de café em destaque" />
+                <figcaption class="sr-only">Slide 1: Imagem de destaque Café Vitta</figcaption>
+              </figure>
+            </div>
+            <div class="slide" data-slide="2">
+              <figure>
+                <img src="images/img-slider-cafe-vitta.jpg" alt="Café Vitta: xícara de café com aroma" />
+                <figcaption class="sr-only">Slide 2: Segunda imagem de destaque Café Vitta</figcaption>
+              </figure>
+            </div>
+            <button class="carousel-btn prev" aria-label="Slide anterior" data-action="prev">&#10094;</button>
+            <button class="carousel-btn next" aria-label="Próximo slide" data-action="next">&#10095;</button>
+            <div class="carousel-dots" role="tablist" aria-label="Indicadores do carousel"></div>
           </div>
         </div>
       </section>
+    <script src="script.js"></script>
 
       <section class="conteudo-principal container" aria-labelledby="titulo-teste">
         <div class="content-grid">
           <article class="texto" id="texto-teste">
             <h1 id="titulo-teste">Qualidade de nossos produtos</h1>
             <div class="descricao-avaliacao">
-              <p><strong>Fornecimento:</strong></p>
+              <p><strong>Fornecemos:</strong></p>
               <ul>
                 <li>Grãos selecionados de regiões de alta altitude;</li>
                 <li>Torra artesanal em pequenos lotes;</li>
@@ -82,29 +96,33 @@
         <div class="boxes-grid">
           <article class="box">
             <figure>
-              <img src="#" alt="Café em Grãos" />
-              <figcaption>Fazemos uma seleção cuidadosa dos melhores grãos.</figcaption>
+              <img src="images/graos-de-cafe.jpg" alt="Café em Grãos" />
+              <figcaption class="sr-only">Fazemos uma seleção cuidadosa dos melhores grãos.</figcaption>
+              <p><a href="#">Fazemos uma seleção cuidadosa dos melhores grãos. Saiba mais</a></p>
             </figure>
           </article>
 
           <article class="box">
             <figure>
-              <img src="#" alt="Café Moído" />
-              <figcaption>Moagem na medida certa para seu preparo.</figcaption>
+              <img src="images/cafe-moido.jpg" alt="Café Moído" />
+              <figcaption class="sr-only">Moagem na medida certa para seu preparo.</figcaption>
+              <p><a href="#">Moagem na medida certa para seu preparo. Saiba mais</a></p>
             </figure>
           </article>
 
           <article class="box">
             <figure>
-              <img src="#" alt="Café em Cápsulas" />
-              <figcaption>Praticidade e sabor na medida certa.</figcaption>
+              <img src="images/cafe-capsula.jpg" alt="Café em Cápsulas" />
+              <figcaption class="sr-only">Praticidade e sabor na medida certa.</figcaption>
+              <p><a href="#">Praticidade e sabor na medida certa. Saiba mais</a></p>
             </figure>
           </article>
 
           <article class="box">
             <figure>
-              <img src="#" alt="Café Aromatizados" />
-              <figcaption>Sabor e aroma únicos para momentos especiais.</figcaption>
+              <img src="images/cafe-aromatizado.jpg" alt="Café Aromatizados" />
+              <figcaption class="sr-only">Sabor e aroma únicos para momentos especiais.</figcaption>
+              <p><a href="#">Sabor e aroma únicos para momentos especiais. Saiba mais</a></p>
             </figure>
           </article>
         </div>

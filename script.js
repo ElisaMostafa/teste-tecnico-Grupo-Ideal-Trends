@@ -28,10 +28,9 @@
   const dotsContainer = document.querySelector('.hero-slider .carousel-dots');
 
   let index = 0;
-  const intervalMs = 3000; // 3s
+  const intervalMs = 3000; 
   let timer = null;
 
-  // Create dots
   slides.forEach((_, i) => {
     const dot = document.createElement('button');
     dot.type = 'button';
@@ -67,18 +66,17 @@
   }
   function stop(){ if(timer){ clearInterval(timer); timer = null; } }
 
-  // Button events
+
   nextBtn?.addEventListener('click', () => { next(); start(); });
   prevBtn?.addEventListener('click', () => { prev(); start(); });
 
-  // Pause on hover/focus
+
   const hero = document.querySelector('.hero-slider');
   hero?.addEventListener('mouseenter', stop);
   hero?.addEventListener('mouseleave', start);
   hero?.addEventListener('focusin', stop);
   hero?.addEventListener('focusout', start);
 
-  // Initialize
   goTo(0);
   start();
 })();
